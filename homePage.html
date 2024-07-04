@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body class="bg-gray-100">
+
+<div class="flex">
+    <!-- Sidebar -->
+    <div class="w-1/4 bg-blue-600 text-white h-screen p-4">
+        <h2 class="text-2xl font-bold mb-6">Simple Online Quiz System</h2>
+        <ul>
+            <li class="mb-4"><a href="#" class="hover:underline">Home</a></li>
+            <li class="mb-4"><a href="#" class="hover:underline">Faculty List</a></li>
+            <li class="mb-4"><a href="#" class="hover:underline">Student List</a></li>
+            <li class="mb-4"><a href="#" class="hover:underline">Quiz List</a></li>
+            <li class="mb-4"><a href="#" class="hover:underline">Quiz Records</a></li>
+        </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="w-3/4 p-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-bold mb-6">Quiz</h2>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 border">Quiz</th>
+                        <th class="py-2 px-4 border">Items</th>
+                        <th class="py-2 px-4 border">Had Taken</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border">Test Exam</td>
+                        <td class="py-2 px-4 border">1</td>
+                        <td class="py-2 px-4 border">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
