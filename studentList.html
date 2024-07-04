@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty List</title>
+    <title>Student List</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
@@ -11,15 +11,14 @@
         <aside class="w-64 bg-white shadow-md">
             <nav class="flex flex-col p-4">
                 <a href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Home</a>
-                <a href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Faculty List</a>
-                <a id="studentList" href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Student List</a>
+                <a href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Student List</a>
                 <a href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Quiz List</a>
                 <a href="#" class="py-2 text-gray-600 hover:bg-blue-500 hover:text-white rounded">Quiz Records</a>
             </nav>
         </aside>
         <main class="flex-1 p-6">
             <div class="flex justify-between items-center mb-4">
-                <h1 class="text-2xl font-semibold">Faculty List</h1>
+                <h1 class="text-2xl font-semibold">Student List</h1>
                 <button id="openModalBtn" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded">+ Add New</button>
             </div>
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
@@ -32,15 +31,15 @@
                         <tr>
                             <th class="px-4 py-2 border">sl</th>
                             <th class="px-4 py-2 border">Name</th>
-                            <th class="px-4 py-2 border">Department</th>
+                            <th class="px-4 py-2 border">Subject</th>
                             <th class="px-4 py-2 border">Action</th>
                         </tr>
                     </thead>
-                    <tbody id="facultyList">
+                    <tbody id="studentList">
                         <tr>
                             <td class="px-4 py-2 border">1</td>
-                            <td class="px-4 py-2 border">Mr. Md Rajib Mia </td>
-                            <td class="px-4 py-2 border">SWE</td>
+                            <td class="px-4 py-2 border">Md Rajib Reza</td>
+                            <td class="px-4 py-2 border">173-35-1830</td>
                             <td class="px-4 py-2 border">
                                 <button class="px-2 py-1 text-white bg-blue-500 rounded">Edit</button>
                                 <button class="px-2 py-1 text-white bg-red-500 rounded">Delete</button>
@@ -48,8 +47,8 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-2 border">2</td>
-                            <td class="px-4 py-2 border">Rajib Reza</td>
-                            <td class="px-4 py-2 border">CSE</td>
+                            <td class="px-4 py-2 border">Nadim</td>
+                            <td class="px-4 py-2 border">173-35-1836</td>
                             <td class="px-4 py-2 border">
                                 <button class="px-2 py-1 text-white bg-blue-500 rounded">Edit</button>
                                 <button class="px-2 py-1 text-white bg-red-500 rounded">Delete</button>
@@ -69,36 +68,27 @@
         <div class="flex items-center justify-center min-h-screen px-4">
             <div class="bg-white rounded-lg shadow-lg w-full max-w-md">
                 <div class="flex justify-between items-center border-b p-4">
-                    <h2 class="text-xl font-semibold">Add New Faculty</h2>
+                    <h2 class="text-xl font-semibold">Add New Student</h2>
                     <button id="closeModalBtn" class="text-gray-400 hover:text-gray-600">&times;</button>
                 </div>
                 <div class="p-4">
-                    <form id="addFacultyForm" class="space-y-4">
+                    <form id="addStudentForm" class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                             <input type="text" id="name" name="name" class="block w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                         </div>
                         <div>
-                            <label for="department" class="block text-sm font-medium text-gray-700">Department</label>
-                            <input type="text" id="department" name="department" class="block w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                            <input type="text" id="username" name="username" class="block w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                            <input type="password" id="password" name="password" class="block w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <input type="text" id="subject" name="subject" class="block w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                         </div>
                         <div class="flex justify-end">
-                            <button id="saveFactuly" type="submit" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded">Save</button>
+                            <button type="submit" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded">Save</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="js/checkFlist.js"></script>
+    <script src="js/checkStudent.js"></script>
 </body>
 </html>
