@@ -1,3 +1,6 @@
+document.getElementById('saveFactuly').addEventListener('click',function(){
+    window.location.href = "checkFactuly.html"
+})
 document.getElementById('openModalBtn').addEventListener('click', function() {
     document.getElementById('modal').classList.remove('hidden');
 });
