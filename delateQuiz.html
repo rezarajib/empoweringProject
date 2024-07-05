@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Record</title>
+    <title>Quiz List</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-blue-100">
     <div class="container mx-auto p-4">
-        <h1 class="text-4xl font-bold text-center mb-4">Quiz Records</h1>
+        <h1 class="text-4xl font-bold text-center mb-4">Quiz List</h1>
         <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
             <div class="flex justify-between items-center mb-4">
                 <div class="flex space-x-4">
@@ -22,18 +22,21 @@
                     <span class="text-gray-700">entries</span>
                 </div>
                 <input type="text" id="search" class="border rounded p-2" placeholder="Search">
+                <button class="px-4 py-2 font-semibold text-white bg-blue-500 rounded">+ Add New</button>
             </div>
-            <table class="min-w-full bg-white" id="quizRecordTable">
+            <table class="min-w-full bg-white" id="quizListTable">
                 <thead>
                     <tr>
-                        <th class="py-2 border-b">sl</th>
-                        <th class="py-2 border-b">Student Name</th>
-                        <th class="py-2 border-b">Quiz</th>
-                        <th class="py-2 border-b">Score</th>
+                        <th class="py-2 border-b">#</th>
+                        <th class="py-2 border-b">Title</th>
+                        <th class="py-2 border-b">Items</th>
+                        <th class="py-2 border-b">Point per Items</th>
+                        <th class="py-2 border-b">Faculty</th>
+                        <th class="py-2 border-b">Action</th>
                     </tr>
                 </thead>
-                <tbody id="quizRecordTableBody">
-                    <!-- Records will be inserted here by JavaScript -->
+                <tbody id="quizListTableBody">
+                    <!-- Quiz records will be inserted here by JavaScript -->
                 </tbody>
             </table>
             <div class="mt-4 flex justify-between">
@@ -47,6 +50,7 @@
         </div>
     </div>
 
-    <script src="js/recordFunction.js"></script>
+    <script src="js/delateQuizList.js"></script>
 </body>
 </html>
+
