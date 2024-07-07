@@ -3,7 +3,7 @@ document.getElementById('btnSubmit').addEventListener('click',function(){
     const enterValueE = enterEmail.value;
     const enterPass = document.getElementById('userPassword');
     const enterValueP = enterPass.value
-    if (enterValueE === "rajibreza64@gmail.com" && enterValueP === "123456"){
+    if (enterValueE === "rajibreza64@gmail.com" && enterValueP === "171-35-1830"){
         window.location.href = "homePage.html";
     }
     else{
